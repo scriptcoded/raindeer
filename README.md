@@ -24,6 +24,40 @@ UMD script:
 <script src="https://unpkg.com/raindeer"></script>
 ```
 
+## Usage
+
+A simple and pretty "useful" use case is to make things rain whenever anything
+is clicked.
+
+```js
+document.addEventListener('click', function () {
+  EmojiRain.start(document.body, {
+    duration: 2,
+    dropSize: 40,
+    emoji: {
+      '😄': 5,
+      '🍰': 1
+    }
+  })
+})
+```
+
+These are the options that can be given to `EmojiRain.start`:
+
+| Option | Default value | Type | Description |
+| ------ | ------------- | ---- | ----------- |
+| `emoji` | *Required* | `String \| Array \| Object` | Set to a single emoji as a string to make only that emoji rain. Set to an array of emoji strings to make those emoji rain equally much. Set to an object where the keys are emoji and the value is the likeliness of that emoji raining. |
+| `duration` | `0` | `Number` | The duration of the rain. If set to 0 the rain will go on until `EmojiRain.stop()` is called. |
+| `dropsPerSecond` | `10` | `Number` | How many drops to create per second |
+| `dropSize` | `20` | `Number` | The size of the drops. This actually controls the font size in `px` of the emoji. |
+| `speedMin` | `500` | `Number` | The minimum time allowed for a drop to travel across the screen. |
+| `speedMax` | `1000` | `Number` | The minimum time allowed for a drop to travel across the screen. |
+| `rotationStartMin` | `-90` | `Number` | The minimum allowed start rotation for a drop. |
+| `rotationStartMax` | `-180` | `Number` | The maximum allowed start rotation for a drop. |
+| `rotationDistanceMin` | `0` | `Number` | The minimum allowed rotation distance for a drop. |
+| `rotationDistanceMax` | `45` | `Number` | The maximum allowed rotation distance for a drop. |
+| `resolution` | `2` | `Number` | The amount of times that new drops will be created each second. This shouldn't need to be increased and could potentially have a high performance impact. |
+
 ## Contributing
 
 See the [contribution guidelines](CONTRIBUTING.md).

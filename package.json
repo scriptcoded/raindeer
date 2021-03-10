@@ -19,6 +19,11 @@
   "files": [
     "/lib"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scriptcoded/raindeer.git"
+  },
+  "homepage": "https://github.com/scriptcoded/raindeer#readme",
   "author": "Malcolm Nihlén <malcolm.nihlen@gmail.com>",
   "license": "MIT",
   "devDependencies": {

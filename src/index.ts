@@ -1,16 +1,17 @@
 export type EmojiSet = string | string[] | Record<string, number>
 
 export interface CreateRainOptions {
-  emoji: EmojiSet,
+  emoji: EmojiSet
   duration?: number
-  dropSize?: number
   dropsPerSecond?: number
-  movementSpeedMin?: number
-  movementSpeedMax?: number
-  rotationSpeedMin?: number
-  rotationSpeedMax?: number
-  rotationMin?: number
-  rotationMax?: number
+  dropSize?: number
+  speedMin?: number
+  speedMax?: number
+  rotationStartMin?: number
+  rotationStartMax?: number
+  rotationDistanceMin?: number
+  rotationDistanceMax?: number
+  resolution?: number
 }
 
 export interface AnimateDropOptions {

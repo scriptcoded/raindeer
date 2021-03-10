@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es3",
+    "lib": [ "es2015", "dom" ],
+    "esModuleInterop": true,
+    "baseUrl": "src",
+    "outDir": "lib",
+    "rootDir": "src",
+    "strict": true,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationDir": "lib"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}

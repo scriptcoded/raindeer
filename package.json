@@ -1,0 +1,40 @@
+{
+  "name": "raindeer",
+  "version": "0.1.0",
+  "description": "Make your website fabulous",
+  "main": "lib/raindeer.min.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "clean": "shx rm -rf _bundles lib lib-esm",
+    "watch": "npm run clean && webpack -w",
+    "build": "npm run clean && webpack",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build",
+    "prepublishOnly" : "npm run lint"
+  },
+  "keywords": [
+    "emoji"
+  ],
+  "files": [
+    "/lib"
+  ],
+  "author": "Malcolm Nihlén <malcolm.nihlen@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "eslint": "^7.21.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "shx": "^0.3.3",
+    "terser-webpack-plugin": "^5.1.1",
+    "ts-loader": "^8.0.17",
+    "typescript": "^4.2.2",
+    "webpack": "^5.24.3",
+    "webpack-cli": "^4.5.0"
+  }
+}

@@ -9,6 +9,8 @@ Raindeer (not to be confused with
 [reindeer](https://en.wikipedia.org/wiki/Reindeer)) is a rather small package
 that takes a list of emojis and make them rain all over your website.
 
+Demo: https://codepen.io/scriptcoded/pen/ZEqJPKd
+
 ## Installation
 
 Install with Yarn:
